@@ -8,6 +8,13 @@ export default class Cell extends Component {
       color: this.props.color
     }
   }
+
+  //step8 set up another click event
+  handleClick = () => {
+    this.setState({
+      color: this.props.selectedColor
+    })
+  }
   
   render() {
     return (
